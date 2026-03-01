@@ -1,6 +1,6 @@
 # Quizou 2.0 — Advanced AI Scholar Bowl Platform
 
-**Quizou** is a free, AI-powered Scholar Bowl practice platform designed for the **Congressional App Challenge**. It generates NAQT-style pyramidal questions across 50+ academic subjects, tracks performance with adaptive analytics, and provides innovative study tools — all aimed at making competitive quiz preparation accessible to every student, especially those at underfunded schools.
+**Quizou** is a free, AI-powered Scholar Bowl practice platform. It generates NAQT-style pyramidal questions across 50+ academic subjects, tracks performance with adaptive analytics, and provides innovative study tools — all aimed at making competitive quiz preparation accessible to every student, especially those at underfunded schools.
 
 Built with **Flask**, **SQLite**, and **Together.AI (Meta Llama 3.1)**, Quizou delivers a full-featured learning environment in a lightweight, deployable package.
 
@@ -396,7 +396,7 @@ Contributions are welcome. Please open an issue or pull request.
 
 ## License
 
-This project is developed for the **Congressional App Challenge**. All rights reserved.
+All rights reserved.
 
 ---
 
