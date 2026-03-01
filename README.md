@@ -166,7 +166,6 @@ quizou/
 ├── migrate_db.py                    # Idempotent database migration script
 ├── scholar_bowl.db                  # SQLite database (auto-created on first run)
 ├── README.md                        # This file
-├── replit.md                        # Replit-specific project documentation
 ├── .gitignore                       # Git ignore rules
 │
 └── static/                          # Frontend assets
