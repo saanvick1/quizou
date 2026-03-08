@@ -35,11 +35,13 @@
         <nav class="nav-bar" id="nav-menu" role="navigation" aria-label="Main navigation">
             <a href="/home" class="nav-link"><span>Home</span></a>
             <a href="/daily-challenge" class="nav-link"><span>Daily</span></a>
+            <a href="/teacher-dashboard" class="nav-link teacher-only" style="display:none;"><span>My Classes</span></a>
             <a href="/history" class="nav-link"><span>History</span></a>
             <a href="/topic-insights" class="nav-link"><span>Topic Insights</span></a>
             <a href="/competition" class="nav-link"><span>Competition</span></a>
             <a href="/recommendations" class="nav-link"><span>AI Coach</span></a>
             <a href="/flashcards" class="nav-link"><span>Flashcards</span></a>
+            <a href="/packet-generator" class="nav-link active"><span>Packets</span></a>
             <a href="/profile" class="nav-link"><span>Profile</span></a>
         </nav>
 
@@ -50,6 +52,8 @@
                     <p>Generate competition-ready scholar bowl packets with AI</p>
                 </div>
             </div>
+
+            <div id="packets-remaining-badge" class="packets-remaining-badge" aria-live="polite"></div>
 
             <div class="packet-config-card">
                 <div class="packet-type-selector">
