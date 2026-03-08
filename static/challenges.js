@@ -285,7 +285,7 @@ async function submitChallengeAnswers() {
             const checkData = await resp.json();
             isCorrect = checkData.correct;
         } catch (e) {
-            isCorrect = normalizeAnswer(userAnswer) === normalizeAnswer(correctAnswer);
+            isCorrect = fuzzyMatch(userAnswer, correctAnswer);
         }
 
         if (isCorrect) score++;
