@@ -12,6 +12,10 @@ async function checkSession() {
                 headerUsername.textContent = data.username;
                 headerWelcome.style.display = 'inline';
             }
+            if (data.role === 'teacher') {
+                var teacherLinks = document.querySelectorAll('.teacher-only');
+                teacherLinks.forEach(function(el) { el.style.display = ''; });
+            }
             loadDecayData();
         } else {
             window.location.href = '/home';
@@ -84,14 +88,7 @@ function buildTopicCard(topic, showReviewBtn) {
 }
 
 function reviewTopic(topic) {
-    window.location.href = '/home';
-    setTimeout(function() {
-        const topicInput = document.getElementById('topic');
-        if (topicInput) {
-            topicInput.value = topic;
-            topicInput.focus();
-        }
-    }, 500);
+    window.location.href = '/home?topic=' + encodeURIComponent(topic);
 }
 
 async function loadDecayData() {
