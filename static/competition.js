@@ -163,7 +163,7 @@ function submitAnswer() {
     const userAnswer = answerInput.value.trim();
     
     const question = competitionData.questions[currentQuestionIndex];
-    const correct = userAnswer.toLowerCase() === question.answer.toLowerCase();
+    const correct = fuzzyMatch(userAnswer, question.answer);
     
     if (correct) {
         userScore++;
